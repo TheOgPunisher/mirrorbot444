@@ -1,0 +1,22 @@
+Run the Following commands one by one:
+1.pip3 install -U -r requirements.txt
+2.py gen_sa_accounts.py
+3.py gen_sa_accounts.py --list-projects
+4.py gen_sa_accounts.py --enable-services projectid
+5.py gen_sa_accounts.py --create-sas projectid
+6.py gen_sa_accounts.py --download-keys projectid
+7.$emails = Get-ChildItem .\**.json |Get-Content -Raw |ConvertFrom-Json |Select -ExpandProperty client_email >>emails.txt
+8.py rename_script.py
+
+* From 1 to 6 Commands and 8 run it CMD 
+* Run Command 7 in Powershell.
+
+---
+Before running Commands in CMD & Powershell first configure them in that Folder!
+
+To Configure CMD:
+Open the Extracted Folder and in the Address bar, type CMD and it will automatically configure it and then there is no need to execute cd command.
+
+To Configure Powershell:
+Open the Accounts Folder and type "Powershell" and you are ready to do it!
+
